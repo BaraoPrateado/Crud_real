@@ -27,19 +27,10 @@
                 </header>
             @endif
 
-            <div name="header">
-                <h2 class="bg-white border-b border-gray-100 font-semibold text-xl  leading-tight mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ __('Dashboard') }} 
-                </h2>
-            </div>
-
-            <br>
-
             <!-- Page Content -->
-            <div style="text-align:center">
-                @yield('conteudo')
-            </div>
-            
+            <main>
+                {{ $slot }}
+            </main>
         </div>
     </body>
 </html>
